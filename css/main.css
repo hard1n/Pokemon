@@ -1,0 +1,176 @@
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: ArcadeClassic;
+    src: url(fonts/ArcadeClassic.ttf);
+}
+
+#mensaje-horizontal{
+    border: 2px solid lawngreen;
+    margin: 10px;
+    color: blue;
+    text-align: center;
+    justify-self: center;
+    font-size: 50px;
+    font-family: ArcadeClassic;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+
+@media only screen and (orientation: portrait) {
+
+    .contenedor { 
+        display: none; 
+    }
+
+    #aviso-movil-vertical { 
+        display: block;
+        position: absolute;
+        font-family: ArcadeClassic;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+
+    p, h1{
+        font-family: ArcadeClassic;
+    }
+
+    #aviso-movil-vertical { 
+        display: none; 
+    }   
+
+    .infoDeJuego > p {
+        font-size: large;
+        font-family: ArcadeClassic;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    #wrapper {
+        /*border: 2px solid blue;*/
+        max-height: 100%;
+    }
+    
+    .contenedor {
+        /*border: 2px solid lawngreen;*/
+        justify-content: center;
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+    
+    .infoCabeza {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+    
+    .vidaContenedor {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        column-gap: 10px;
+        margin: 1%;
+        column-gap: 1px;
+    }
+    
+    .level {
+        font-size: 20px;
+        font-family: ArcadeClassic;
+        text-align: right;
+        align-self: end;
+    }
+    
+    .pikachu {
+        margin: 1%;
+    }
+    
+    .jigglypuff {
+        margin: 1%;
+    }
+    
+    .hpResta{
+       border: 1px solid #FF3D31;
+       align-self: center;
+       background-color: #FF3D31;
+       border-radius: 10%;
+       height: 25%;
+       width: 100%;
+    }
+    
+    #hpPikachu {
+       border: 1px solid green;
+       align-self: center;
+       background-color: green;
+       border-radius: 10%;
+       height: 100%;
+       width: 100%;
+    }
+    
+    #hpJigglypuff {
+       border: 1px solid green;
+       align-self: center;
+       background-color: green;
+       border-radius: 10%;
+       height: 100%;
+       width: 100%;
+    }
+    
+    .contenedor-info-juego {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        justify-content: center;
+    }
+    
+    .controles-info {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 55% 40%;
+        row-gap: 1em; 
+        margin: 5% 5%0;  
+    }
+    
+    .infoDeJuego {
+        align-self: center;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    .botonesDeJuego {
+        align-self: flex-end;
+        margin: 0 10% 0;
+    }
+    
+    button {
+        color: #fff;
+        background: #FF3D31;
+        font-size: 25px;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        padding: 15px;
+        cursor: pointer;
+        outline: none;
+        margin: 10px 0 5%;
+        width: 100%;
+        border-style: solid;
+        border-color: #FF3D31;
+        border-radius: 10px;
+    }
+    
+     #botonAtacar {
+       display: none;
+     }
+}

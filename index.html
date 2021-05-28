@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Pokemon</title>
+    <link rel="icon" href="images/pokeball.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/selection-page_test.css">
+    <link rel="stylesheet" href="./css/selection-page.css">
+</head>
+<body background="images/Estadio_Pokemon.jpg    ">
+    <div class="container">
+        <!--Barra de seleccion-->
+        <div class="selection-bar">
+            <h2>SELECTIONA TU POKEMON</h1>
+            <div class="selection-bar-names">
+                <div class="char-selected-name">
+                    <p>selectionado</p>
+                </div>
+                <div class="char-auto-name">
+                    <p>automatico</p>
+                </div>
+            </div>
+            <div class="character-selection-block">
+                <div id="bulbasaur-selected"> <img src="" alt="image"></div>
+                <div id="charmeleon-selected"> <img src="" alt="charmeleon"></div>
+                <div id="golbat-selected"> <img src="" alt="image"></div>
+                <div id="hitmonlee-selected"> <img src="" alt="image"></div>
+                <div id="jigglypuff-selected"> <img src="images/pokemones/jigglypuff/jigglypuff_select.png" alt="jigglypuff"></div>
+                <div id="onix-selected"> <img src="" alt="image"></div>
+                <div id="pikachu-selected"> <img src="images/pokemones/pikachu/pikachu_select.png" alt="pikachu"></div>
+                <div id="scizor-selected"> <img src="" alt="image"></div>
+                <div id="seadra-selected"> <img src="" alt="image"></div>
+                <div id="vaporeon-selected"> <img src="" alt="image"></div>
+            </div>
+        </div>
+        <div class="pokemon-container">
+            <!-- Seleccion del juador -->
+            <div class="pokemon-user">
+                <div>
+                    <img class="image" src="images/pokemones/pikachu/pikachu_inicio.png" alt="POKEMON SELECIONADO">
+                </div>
+            </div>
+            <!-- Seleccion automatica -->
+            <div class="pokemon-auto">
+                <div> 
+                    <img  class="image" src="images/pokemones/jigglypuff/jigglypuff_inicio.png" alt="CONTRINCANTE">
+                </div>
+            </div>
+             
+        </div>
+        <footer class="footer">
+            <button id="start-game" type="button" name="buttson" onclick="iniciarBatalla();">INICIAR BATALLA</button>
+        </footer>
+    </div>
+</body>
+</html>

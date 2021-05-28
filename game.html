@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Pokemon</title>
+    <link rel="icon" href="images/pokeball.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script  type="text/javascript" src="js/code.js"></script>
+  </head>
+  <body>
+    <div id="aviso-movil-vertical">
+        <h1 id="mensaje-horizontal">Para jugar coloca el dispositivo en horizontal.</h1>
+    </div>
+        <div id="wrapper">
+            <div class="contenedor">
+                <div class="pikachu">
+                    <div class="infoPikachu">
+                        <div class="infoCabeza">
+                            <h1>Pikachu</h1>
+                            <p class="level">Lv55</p>
+                        </div>
+                        <div class="vidaContenedor">
+                            <p>HP:</p>
+                            <div class="hpResta">
+                                <div id="hpPikachu">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-img">
+                            <img id="imgPikachu" src="images/pikachu_inicio.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="contenedor-info-juego">
+                    <div class="controles-info">
+                        <div id="infoDeJuego">
+                            <p id="textInfoJuego"></p>
+                        </div>
+                        <div class="botonesDeJuego">
+                            <button id="iniciar" type="button" name="button" onclick="iniciarBatalla();">INICIAR BATALLA</button>
+                            <button id="botonAtacar" type="button" name="button" onclick="atacar();">ATACAR</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="jigglypuff">
+                     <div class="infoJigglypuff">
+                         <div class="infoCabeza">
+                             <h1>Jigglypuff</h1>
+                             <p class="level">Lv45</p>
+                         </div>
+                         <div class="vidaContenedor">
+                            <p>HP:</p>
+                            <div class="hpResta"> 
+                                <hr id="hpJigglypuff">
+                            </div>
+                         </div>
+                         <div class="wrapper-img">
+                            <img id="imgJigglypuff" src="images/Jigglypuff_inicio.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
